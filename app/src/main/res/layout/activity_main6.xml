@@ -8,6 +8,7 @@
     tools:context=".MainActivity"
     android:background="#40609d">
 
+
     <TextView
         android:id="@+id/text_live"
         android:layout_width="250dp"

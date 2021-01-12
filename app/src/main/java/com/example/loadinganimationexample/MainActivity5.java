@@ -30,6 +30,7 @@ public class MainActivity5 extends AppCompatActivity {
         second_single_list_item_check_button=findViewById(R.id.second_single_list_item_check_button);
 
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+
             @Override
             public void onCheckedChanged(RadioGroup group, int i) {
                 if(i == R.id.single_list_item_check_button){
