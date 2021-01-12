@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="현재정류장"
+        android:background="#40609d"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        >
+    </TextView>
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/firststation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/busstop_f"
+                    android:layout_weight= "0.6"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:layout_margin="10dp"
+                    android:textSize="25sp"
+                    android:text="1정거장"
+                    android:layout_weight= "1.4"
+                    android:textStyle="normal|bold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/secondstation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/busstop_r"
+                    android:layout_weight= "0.6"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:layout_margin="10dp"
+                    android:textSize="25sp"
+                    android:text="2정거장"
+                    android:layout_weight= "1.4"
+                    android:textStyle="normal|bold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/thirdstation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/busstop_r"
+                    android:layout_weight= "0.6"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:layout_margin="10dp"
+                    android:textSize="25sp"
+                    android:text="3정거장"
+                    android:layout_weight= "1.4"
+                    android:textStyle="normal|bold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/forthstation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/busstop_r"
+                    android:layout_weight= "0.6"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:layout_margin="10dp"
+                    android:textSize="25sp"
+                    android:text="4정거장"
+                    android:layout_weight= "1.4"
+                    android:textStyle="normal|bold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/fifthstation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/busstop_r"
+                    android:layout_weight= "0.6"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:layout_margin="10dp"
+                    android:textSize="25sp"
+                    android:text="5정거장"
+                    android:layout_weight= "1.4"
+                    android:textStyle="normal|bold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/sixthtation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/busstop_r"
+                    android:layout_weight= "0.6"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:layout_margin="10dp"
+                    android:textSize="25sp"
+                    android:text="6정거장"
+                    android:layout_weight= "1.4"
+                    android:textStyle="normal|bold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/seventhtation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/busstop_r"
+                    android:layout_weight= "0.6"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:layout_margin="10dp"
+                    android:textSize="25sp"
+                    android:text="7정거장"
+                    android:layout_weight= "1.4"
+                    android:textStyle="normal|bold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/eighthstation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/busstop_r"
+                    android:layout_weight= "0.6"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:layout_margin="10dp"
+                    android:textSize="25sp"
+                    android:text="8정거장"
+                    android:layout_weight= "1.4"
+                    android:textStyle="normal|bold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ninthstation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/busstop_r"
+                    android:layout_weight= "0.6"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:layout_margin="10dp"
+                    android:textSize="25sp"
+                    android:text="9정거장"
+                    android:layout_weight= "1.4"
+                    android:textStyle="normal|bold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/tenthstation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/busstop_r"
+                    android:layout_weight= "0.6"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:layout_margin="10dp"
+                    android:textSize="25sp"
+                    android:text="10정거장"
+                    android:layout_weight= "1.4"
+                    android:textStyle="normal|bold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/eleventhstation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/busstop_r"
+                    android:layout_weight= "0.6"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:layout_margin="10dp"
+                    android:textSize="25sp"
+                    android:text="11정거장"
+                    android:layout_weight= "1.4"
+                    android:textStyle="normal|bold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/twelvthstation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/busstop_r"
+                    android:layout_weight= "0.6"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:layout_margin="10dp"
+                    android:textSize="25sp"
+                    android:text="12정거장"
+                    android:layout_weight= "1.4"
+                    android:textStyle="normal|bold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/thirteenthstation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/busstop_l"
+                    android:layout_weight= "0.6"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:layout_margin="10dp"
+                    android:textSize="25sp"
+                    android:text="13정거장"
+                    android:layout_weight= "1.4"
+                    android:textStyle="normal|bold"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
