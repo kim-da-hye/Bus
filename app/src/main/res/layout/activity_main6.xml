@@ -16,6 +16,7 @@
         android:text="(다음) 정류장"
         android:textSize="30dp"
         android:textColor="@color/white"
+        android:background="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintLeft_toLeftOf="parent"

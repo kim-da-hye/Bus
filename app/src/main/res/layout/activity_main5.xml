@@ -31,6 +31,11 @@
             android:layout_height="match_parent"
             android:layout_margin="10dp"
             android:orientation="vertical">
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/radioGroup"
+                />
             <LinearLayout
                 android:id="@+id/firststation"
                 android:layout_width="match_parent"
@@ -415,20 +420,11 @@
                     android:gravity="center_vertical"
                     android:background="@drawable/busstop_r"
                     android:layout_weight= "0.6"/>
-                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight= "1.4"
                     android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="40sp"
-                        android:layout_margin="10dp"
-                        android:textSize="25sp"
-                        android:text="10정거장"
-
-                        android:textStyle="normal|bold"/>
 
                     <RadioButton
                         android:id="@+id/tenth_single_list_item_check_button"
@@ -439,6 +435,14 @@
                         android:checked="false"
                         android:clickable="false"
                         android:focusable="false" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40sp"
+                        android:text="10정거장"
+                        android:textSize="25sp"
+
+                        android:textStyle="normal|bold" />
 
                 </RelativeLayout>
             </LinearLayout>
@@ -497,7 +501,7 @@
                     android:gravity="center_vertical"
                     android:background="@drawable/busstop_r"
                     android:layout_weight= "0.6"/>
-                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight= "1.4"
