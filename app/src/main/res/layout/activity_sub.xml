@@ -13,13 +13,13 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="-11dp"
         android:layout_marginRight="-11dp"
-        android:layout_toStartOf="@+id/button2"
-        android:layout_toLeftOf="@+id/button2"
+        android:layout_toStartOf="@+id/button_t"
+        android:layout_toLeftOf="@+id/button_t"
         android:hint="버스 번호를 입력하세요" />
 
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button_t"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
@@ -28,7 +28,7 @@
         android:textColor="@color/black"/>
 
     <ListView
-        android:id="@+id/listview1"
+        android:id="@+id/listview_t"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/editTextFilter"
