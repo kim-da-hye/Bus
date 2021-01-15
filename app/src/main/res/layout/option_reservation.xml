@@ -14,7 +14,7 @@
         android:layout_height="80dp"
         android:gravity="center"
         android:text="현재정류장"
-        android:background="#40609d"
+        android:background="#6180BC"
         android:textColor="@color/white"
         android:textSize="24sp"
         >
@@ -573,6 +573,7 @@
     </ScrollView>
 
     <Button
+        android:id="@+id/btn_option_reservation"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@color/black"
@@ -580,6 +581,6 @@
         android:textColor="#ffffff"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:backgroundTint="#40609d"></Button>
+        app:backgroundTint="#6180BC"></Button>
 
 </LinearLayout>

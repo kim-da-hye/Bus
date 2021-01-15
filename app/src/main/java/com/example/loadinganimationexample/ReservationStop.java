@@ -10,10 +10,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity2 extends AppCompatActivity {
+public class ReservationStop extends AppCompatActivity {
 
 
-    private Button btn_reser;
+    private Button btn_reservation;
     private Button btn_stop;
 
     @Override
@@ -22,21 +22,21 @@ public class MainActivity2 extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         getSupportActionBar().setTitle(" 컴소버스");
         actionBar.setBackgroundDrawable(new ColorDrawable(0xFF6495ED));
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.stop_reservation);
 
-        btn_reser=findViewById(R.id.btn_reser);
+        btn_reservation=findViewById(R.id.btn_reservation);
         btn_stop=findViewById(R.id.btn_stop);
-        btn_reser.setOnClickListener(new View.OnClickListener() {
+        btn_reservation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity2.this, MainActivity5.class);
+                Intent intent = new Intent(ReservationStop.this, ReservationOption.class);
                 startActivity(intent);
             }
         });
         btn_stop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity2.this, MainActivity4.class);
+                Intent intent = new Intent(ReservationStop.this, QuitCancel.class);
                 startActivity(intent);
             }
         });

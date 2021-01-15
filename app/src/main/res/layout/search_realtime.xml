@@ -4,22 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SubActivity"
-    android:background="#40609d">
+    tools:context=".RealtimeSearch"
+    android:background="#6180BC">
 
     <EditText
-        android:id="@+id/editTextFilter"
+        android:id="@+id/bus_Filter"
         android:layout_width="334dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="-11dp"
         android:layout_marginRight="-11dp"
-        android:layout_toStartOf="@+id/button_t"
-        android:layout_toLeftOf="@+id/button_t"
+        android:layout_toStartOf="@+id/btn_realtime_button"
+        android:layout_toLeftOf="@+id/btn_realtime_button"
         android:hint="버스 번호를 입력하세요" />
 
 
     <Button
-        android:id="@+id/button_t"
+        android:id="@+id/btn_realtime_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
@@ -28,10 +28,10 @@
         android:textColor="@color/black"/>
 
     <ListView
-        android:id="@+id/listview_t"
+        android:id="@+id/search_listview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/editTextFilter"
+        android:layout_below="@id/bus_Filter"
         android:layout_marginTop="2dp"
         android:textFilterEnabled="true">
 

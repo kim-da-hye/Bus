@@ -9,14 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LoadingAnimationExample">
-        <activity android:name=".MainActivity6"></activity>
-        <activity android:name=".MainActivity5" />
-        <activity android:name=".MainActivity4" />
-        <activity android:name=".MainActivity3" />
-        <activity android:name=".MainActivity2" />
-        <activity android:name=".SubActivity" />
+        <activity android:name=".BusQuit"></activity>
+        <activity android:name=".ReservationOption" />
+        <activity android:name=".QuitCancel" />
+        <activity android:name=".RealtimeBus" />
+        <activity android:name=".ReservationStop" />
+        <activity android:name=".RealtimeSearch" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".SpalshActivity">
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

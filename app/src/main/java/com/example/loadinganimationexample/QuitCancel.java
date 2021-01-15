@@ -8,19 +8,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity4 extends AppCompatActivity {
-    private Button btn_sto;
+public class QuitCancel extends AppCompatActivity {
+    private Button btn_realtime_stop;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main4);
+        setContentView(R.layout.cancel_quit);
         ActionBar actionBar=getSupportActionBar();
         actionBar.hide();
-        btn_sto= findViewById(R.id.btn_sto);
-        btn_sto.setOnClickListener(new View.OnClickListener() {
+        btn_realtime_stop= findViewById(R.id.btn_realtime_stop);
+        btn_realtime_stop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity4.this, MainActivity6.class);
+                Intent intent = new Intent(QuitCancel.this, BusQuit.class);
                 startActivity(intent);
             }
         });

@@ -6,11 +6,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="horizontal"
     tools:context=".MainActivity"
-    android:background="#40609d">
+    android:background="#6180BC">
 
 
     <TextView
-        android:id="@+id/text_live"
+        android:id="@+id/bus_nextstop"
         android:layout_width="250dp"
         android:layout_height="60dp"
         android:gravity="center"
@@ -25,17 +25,18 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.1" />
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="300dp"
-        android:layout_height="350dp"
+
+    <ImageButton
+        android:id="@+id/quit"
+        android:layout_width="331dp"
+        android:layout_height="361dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
         android:src="@drawable/bell"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.6"
-         />
+        app:layout_constraintVertical_bias="0.643" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

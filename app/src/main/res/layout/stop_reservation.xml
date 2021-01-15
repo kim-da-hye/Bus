@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2"
-    android:background="#40609d">
+    tools:context=".ReservationStop"
+    android:background="#6180BC">
 
     <Button
-        android:id="@+id/btn_reser"
+        android:id="@+id/btn_reservation"
         android:layout_width="195dp"
         android:layout_height="128dp"
         android:text="예약"

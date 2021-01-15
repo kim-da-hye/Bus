@@ -7,7 +7,6 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.ArrayAdapter;
-import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -15,10 +14,10 @@ import android.widget.ListView;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class SubActivity extends AppCompatActivity{
-    ListView listview_t;
-    Button button_t;
-    EditText editTextFilter;
+public class RealtimeSearch extends AppCompatActivity{
+    ListView search_listview;
+    Button btn_realtime_button;
+    EditText bus_Filter;
     ArrayAdapter<String> adapter;
 
 
@@ -26,15 +25,15 @@ public class SubActivity extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sub);
+        setContentView(R.layout.search_realtime);
         ActionBar actionBar = getSupportActionBar();
         getSupportActionBar().setTitle(" 컴소버스");
         actionBar.setBackgroundDrawable(new ColorDrawable(0xFF6495ED));
         ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1) ;
-        listview_t = (ListView) findViewById(R.id.listview_t) ;
-        editTextFilter = (EditText)findViewById(R.id.editTextFilter) ;
-        button_t=(Button)findViewById(R.id.button_t);
-        listview_t.setAdapter(adapter) ;
+        search_listview = (ListView) findViewById(R.id.search_listview) ;
+        bus_Filter = (EditText)findViewById(R.id.bus_Filter) ;
+        btn_realtime_button=(Button)findViewById(R.id.btn_realtime_button);
+        search_listview.setAdapter(adapter) ;
         adapter.add("100") ;
         adapter.add("201") ;
         adapter.add("302") ;
@@ -47,7 +46,7 @@ public class SubActivity extends AppCompatActivity{
         adapter.add("1110") ;
 
 
-        editTextFilter.addTextChangedListener(new TextWatcher() {
+        bus_Filter.addTextChangedListener(new TextWatcher() {
 
 
 
@@ -55,9 +54,9 @@ public class SubActivity extends AppCompatActivity{
             public void afterTextChanged(Editable edit) {
                 String filterText = edit.toString() ;
                 if (filterText.length() > 0) {
-                    listview_t.setFilterText(filterText) ;
+                    search_listview.setFilterText(filterText) ;
                 } else {
-                    listview_t.clearTextFilter() ;
+                    search_listview.clearTextFilter() ;
                 }
             }
 
@@ -72,9 +71,9 @@ public class SubActivity extends AppCompatActivity{
 
 
 
-        button_t.setOnClickListener(new View.OnClickListener() {
+        btn_realtime_button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(SubActivity.this, MainActivity3.class);
+                Intent intent = new Intent(RealtimeSearch.this, RealtimeBus.class);
                 startActivity(intent);
             }
         });

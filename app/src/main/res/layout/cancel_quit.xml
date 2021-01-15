@@ -12,10 +12,12 @@
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:gravity="center"
-        android:background="#40609d"
+        android:background="#6180BC"
         android:text="현재정류장"
         android:textColor="@color/white"
-        android:textSize="24sp"></TextView>
+        android:textSize="24sp">
+
+    </TextView>
 
     <ScrollView
 
@@ -343,6 +345,7 @@
         android:weightSum="10">
 
         <Button
+            android:id="@+id/btn_realtime_cancle"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="5"
@@ -352,10 +355,10 @@
             android:textColor="#ffffff"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:backgroundTint="#40609d"></Button>
+            app:backgroundTint="#6180BC"></Button>
 
         <Button
-            android:id="@+id/btn_sto"
+            android:id="@+id/btn_realtime_stop"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="5"
@@ -365,7 +368,7 @@
             android:textColor="#ffffff"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:backgroundTint="#40609d"></Button>
+            app:backgroundTint="#6180BC"></Button>
     </LinearLayout>
 
 </LinearLayout>

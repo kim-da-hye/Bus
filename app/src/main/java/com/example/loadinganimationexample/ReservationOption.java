@@ -4,16 +4,24 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.widget.Button;
 
-public class MainActivity6 extends AppCompatActivity {
-    private Button btn_sto;
+public class ReservationOption extends AppCompatActivity {
+
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main6);
+        setContentView(R.layout.option_reservation);
         ActionBar actionBar=getSupportActionBar();
         actionBar.hide();
+
+
+
+
+
+
 
     }
 }
