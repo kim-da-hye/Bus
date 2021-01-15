@@ -13,8 +13,8 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btn_realtime_bus;
-    Button btn_bus_reservation;
+    private Button btn_bus_realtime;
+    private Button btn_bus_reservation;
 
 
     @Override
@@ -26,9 +26,10 @@ public class MainActivity extends AppCompatActivity {
         actionBar.setBackgroundDrawable(new ColorDrawable(0xFF6495ED));
 
 
-        btn_realtime_bus= findViewById(R.id.btn_realtime_bus);
-        btn_bus_reservation=(Button)findViewById(R.id.btn_stop);
-        btn_realtime_bus.setOnClickListener(new View.OnClickListener() {
+        btn_bus_realtime= (Button)findViewById(R.id.btn_bus_realtime);
+        btn_bus_reservation=(Button)findViewById(R.id.btn_bus_reservation);
+
+        btn_bus_realtime.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, RealtimeSearch.class);

@@ -10,7 +10,7 @@
 
 
     <Button
-        android:id="@+id/btn_realtime_bus"
+        android:id="@+id/btn_bus_realtime"
         android:layout_width="140dp"
         android:layout_height="221dp"
         android:text="실시간 버스"

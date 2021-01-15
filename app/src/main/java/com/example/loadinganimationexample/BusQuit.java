@@ -11,6 +11,7 @@ import android.widget.ImageButton;
 
 public class BusQuit extends AppCompatActivity {
     private ImageButton quit;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

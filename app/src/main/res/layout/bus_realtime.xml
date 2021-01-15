@@ -25,7 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:gravity="center"
-            android:text="남서울대학교 주차장<->천안역"
+            android:text="남서울대학교 주차장-천안역"
             android:textColor="@color/white"
             android:textSize="18dp"
             android:layout_marginTop="35dp">
