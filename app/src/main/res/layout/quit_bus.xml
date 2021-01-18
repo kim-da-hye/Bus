@@ -1,42 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="horizontal"
     tools:context=".MainActivity"
-    android:background="#6180BC">
-
+    android:background="#EEEFC6"
+    >
 
     <TextView
-        android:id="@+id/bus_nextstop"
-        android:layout_width="250dp"
-        android:layout_height="60dp"
-        android:gravity="center"
-        android:text="(다음) 정류장"
-        android:textSize="30dp"
-        android:textColor="@color/white"
-        android:background="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.1" />
+        android:id="@+id/stopbus_nextstop"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="149dp"
+        android:text="다음 정류장"
+        android:textColor="#fff"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/rounded_corner_blue"
 
+        android:layout_gravity="center_horizontal" />
 
-    <ImageButton
-        android:id="@+id/quit"
-        android:layout_width="331dp"
-        android:layout_height="361dp"
-        android:background="@android:color/transparent"
-        android:scaleType="centerInside"
-        android:src="@drawable/bell"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.643" />
+    <Button
+        android:id="@+id/btn_quit"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="230dp"
+        android:background="@drawable/round_button"
+        android:elevation="30dp"
+        android:text="STOP"
+        android:textAlignment="center"
+        android:textSize="80dp"
+        android:textStyle="bold"
+        app:backgroundTint="#FF0000" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

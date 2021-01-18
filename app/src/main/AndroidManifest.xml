@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LoadingAnimationExample">
-        <activity android:name=".BusQuit"></activity>
+        <activity android:name=".BusItemList"></activity>
+        <activity android:name=".BusQuit" />
         <activity android:name=".ReservationOption" />
         <activity android:name=".QuitCancel" />
         <activity android:name=".RealtimeBus" />

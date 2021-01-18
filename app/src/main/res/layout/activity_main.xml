@@ -9,46 +9,46 @@
     android:background="#6180BC">
 
 
-    <Button
-        android:id="@+id/btn_bus_realtime"
-        android:layout_width="140dp"
-        android:layout_height="221dp"
-        android:text="실시간 버스"
-        android:textColor="@color/black"
-        android:textSize="30dp"
-        app:backgroundTint="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.191"
+    <ImageView
+        android:layout_marginVertical="70dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.776" />
+        android:id="@+id/bus_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:src="@drawable/ic_bus_green"
+        android:layout_marginTop="30dp"
+        />
+
+    <Button
+        android:id="@+id/btn_bus_realtime"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:background="@drawable/rounded_corner"
+        android:textColor="@color/black"
+        android:text="실시간\n버스"
+        android:textSize="30dp"
+        android:layout_marginTop="50dp"
+        app:backgroundTint="#EEEFC6"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn_bus_reservation"
+        app:layout_constraintTop_toBottomOf="@+id/bus_icon"
+        />
 
     <Button
         android:id="@+id/btn_bus_reservation"
-        android:layout_width="140dp"
-        android:layout_height="221dp"
-        android:text="버스  예약"
-        android:textColor="@color/black"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rounded_corner"
+        android:text="버스\n예약"
         android:textSize="30dp"
-        app:backgroundTint="#ffffff"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.837"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:backgroundTint="#EEEFC6"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toRightOf="@id/btn_bus_realtime"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.776" />
-
-    <ImageView
-        android:layout_width="180dp"
-        android:layout_height="179dp"
-        android:src="@drawable/ic_bus"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.061" />
+        app:layout_constraintTop_toBottomOf="@id/bus_icon" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

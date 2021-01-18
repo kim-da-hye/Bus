@@ -7,10 +7,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class BusQuit extends AppCompatActivity {
-    private ImageButton quit;
+    private Button btn_quit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,11 +21,12 @@ public class BusQuit extends AppCompatActivity {
         ActionBar actionBar=getSupportActionBar();
         actionBar.hide();
 
-        quit=(ImageButton)findViewById(R.id.quit);
+        btn_quit=(Button)findViewById(R.id.btn_quit);
 
-        quit.setOnClickListener(new View.OnClickListener() {
+        btn_quit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Toast.makeText(BusQuit.this, "벨이 울렸습니다", Toast.LENGTH_SHORT).show();
                 AlertDialog.Builder ad= new AlertDialog.Builder(BusQuit.this);
                 ad.setIcon(R.mipmap.ic_launcher);
                 ad.setTitle("즉시 하차");
