@@ -58,14 +58,14 @@
         >
 
         <Button
-            android:id="@+id/reservation_cancle_btn"
+            android:id="@+id/btn_reservation_change"
             android:layout_width="match_parent"
             android:layout_height="160dp"
             android:layout_weight="1"
             android:background="#6180BC"
             android:gravity="center_horizontal"
             android:padding="20dp"
-            android:text="취소"
+            android:text="변경"
             android:textColor="#fff"
             android:textSize="20dp"
             app:backgroundTint="#6180BC" />

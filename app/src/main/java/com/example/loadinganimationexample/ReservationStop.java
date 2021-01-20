@@ -36,7 +36,7 @@ public class ReservationStop extends AppCompatActivity {
         btn_stop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ReservationStop.this, QuitCancel.class);
+                Intent intent = new Intent(ReservationStop.this, QuitChange.class);
                 startActivity(intent);
             }
         });
